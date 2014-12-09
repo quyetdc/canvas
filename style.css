@@ -50,14 +50,19 @@ canvas{
 }
 
 #overlay{
-    display: none;
     color: #ffffff;
     text-align: center;
     font-weight: bold;
     font-size: 25px;
     position: absolute;
-    top: 170px;
-    left: 180px;
+    top: 225px;
+    left: 285px;
+}
+
+#food_word{
+    padding: 15px;
+    border: 1px solid #0099cc;
+    background: #0099cc;
 }
 
 #overlay a{

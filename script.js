@@ -7,12 +7,65 @@ $(document).ready(function () {
     var cw = 15; // cell width
     var food; // food, small square
     var score; // current score
-    var speed = 80; //milliseconds
+    var speed = 70; //milliseconds
     var cellColor = "green";
     var d; // direction
 
+    var option1;
+    var option2;
+    var option3;
+
+    var resultsArr = [
+        {
+            hi: 'あ',
+            ro: 'a'
+        },
+        {
+            hi: 'お',
+            ro: 'o'
+        },
+        {
+            hi: 'え',
+            ro: 'e'
+        },
+        {
+            hi: 'う',
+            ro: 'u'
+        },
+        {
+            hi: 'い',
+            ro: 'i'
+        },
+        {
+            hi: 'か',
+            ro: 'ka'
+        },
+        {
+            hi: 'け',
+            ro: 'ke'
+        },
+        {
+            hi: 'く',
+            ro: 'ku'
+        },
+        {
+            hi: 'こ',
+            ro: 'ko'
+        },
+        {
+            hi: 'き',
+            ro: 'ki'
+        }
+    ];
+
+    var noisyArr = [
+        'sa', 'a', 'u', 'o', 'i', 'e', 'ka', 'ki', 'ke', 'ko', 'ku', 'shi'
+    ];
+
+    var order;
+
 //    Snake Array
-    var snake_array;
+    var snake_array = [];
 
 //    Initializer
 //    This function call other sub-functions
@@ -20,6 +73,11 @@ $(document).ready(function () {
         create_snake();
         create_food();
         score = 0;
+        order = 0;
+        option1 = resultsArr[0].ro;
+        option2 = noisyArr[noisyArr.indexOf(resultsArr[order].ro) - 1];
+        option3 = noisyArr[noisyArr.indexOf(resultsArr[order].ro) + 1];
+
         d = "right";
 
         if (typeof game_loop != "undefined") clearInterval(game_loop);
@@ -39,10 +97,20 @@ $(document).ready(function () {
 
     // Create Food
     function create_food(){
-        food = {
-            x:Math.round(Math.random()*(w-cw)/cw),
-            y:Math.round(Math.random()*(h-cw)/cw)
-        }
+        food = [
+            {
+                x:150,
+                y:225
+            },
+            {
+                x:300,
+                y:360
+            },
+            {
+                x:450,
+                y:60
+            }
+        ]
     }
 
     // Paint Snake
@@ -64,22 +132,48 @@ $(document).ready(function () {
 
         //Collide code
         if(nx == -1 || nx == w/cw || ny == -1 || ny == h/cw || check_collision(nx, ny, snake_array)){
-//            init();
-            // insert final score
-            $("#final_score").html(score);
-            $("#overlay").fadeIn(200);
             return;
         }
 
-        if(nx == food.x && ny == food.y){
-            var tail = {x: nx, y: ny};
-            score++;
-            // Create new Food
-            create_food();
-        } else {
-            var tail = snake_array.pop();
-            tail.x = nx;
-            tail.y = ny
+        if(option1 == resultsArr[order].ro){
+            if(ny == food[0].y/cw && nx == food[0].x/cw) {
+                var tail = {x: nx, y: ny};
+                getRightElement(nx, ny);
+            } else if (ny == food[1].y/cw && nx == food[1].x/cw) {
+                return;
+            } else if (ny == food[2].y/cw && nx == food[2].x/cw) {
+                return;
+            } else {
+                var tail = snake_array.pop();
+                tail.x = nx;
+                tail.y = ny
+            }
+        } else if (option2 == resultsArr[order].ro){
+            if(ny == food[1].y/cw && nx == food[1].x/cw) {
+                var tail = {x: nx, y: ny};
+                getRightElement(nx, ny);
+            } else if (ny == food[0].y/cw && nx == food[0].x/cw) {
+                return;
+            } else if (ny == food[2].y/cw && nx == food[2].x/cw) {
+                return;
+            } else {
+                var tail = snake_array.pop();
+                tail.x = nx;
+                tail.y = ny
+            }
+        } else if (option3 == resultsArr[order].ro){
+            if(ny == food[2].y/cw && nx == food[2].x/cw) {
+                var tail = {x: nx, y: ny};
+                getRightElement(nx, ny);
+            } else if (ny == food[1].y/cw && nx == food[1].x/cw) {
+                return;
+            } else if (ny == food[2].y/cw && nx == food[2].x/cw) {
+                return;
+            } else {
+                var tail = snake_array.pop();
+                tail.x = nx;
+                tail.y = ny
+            }
         }
 
         snake_array.unshift(tail);
@@ -90,8 +184,7 @@ $(document).ready(function () {
             paint_cell(c.x, c.y);
         }
 
-        // pain food
-        paint_cell(food.x, food.y);
+        paint_food(order);
 
         // check Score
         checkScore(score);
@@ -100,11 +193,44 @@ $(document).ready(function () {
         $("#score").html( 'Your Score: ' + score);
     }
 
+    function getRightElement(nx, ny) {
+        score++;
+        if (order < resultsArr.length - 1){
+            order++;
+        } else {
+            order--;
+        }
+
+        tmp_arr = [
+            resultsArr[order].ro,
+            noisyArr[noisyArr.indexOf(resultsArr[order].ro) - 1],
+            noisyArr[noisyArr.indexOf(resultsArr[order].ro) + 1]
+        ];
+        console.log(tmp_arr);
+        do {
+            var option1_order = Math.floor(Math.random()*tmp_arr.length);
+            option1 = tmp_arr[option1_order];
+            tmp_arr.splice(option1_order, 1);
+            option2 = tmp_arr[0];
+            option3 = tmp_arr[1];
+        } while (option1 != resultsArr[order].ro && option2 != resultsArr[order].ro && option3 != resultsArr[order].ro)
+    }
+
     function paint_cell(x, y){
         ctx.fillStyle=cellColor;
         ctx.fillRect(x*cw, y*cw, cw, cw);
         ctx.strokeStyle="white";
         ctx.strokeRect(x*cw, y*cw, cw, cw);
+    }
+
+    function paint_food(order){
+        ctx.font = "18pt Arial";
+        ctx.fillStyle=cellColor;
+        $("#food_word").html(resultsArr[order].hi);
+
+        ctx.fillText(option1, food[0].x, food[0].y + cw, cw);
+        ctx.fillText(option2, food[1].x, food[1].y + cw, cw);
+        ctx.fillText(option3, food[2].x, food[2].y + cw, cw);
     }
 
     function check_collision(x, y, array){
@@ -139,7 +265,7 @@ $(document).ready(function () {
     });
 });
 
-function resetScore() {
+function resetScore(){
     localStorage.setItem('highScore', 0);
-    $('#high_score').html('High Score: ' + 0);
+    $("#high_score").html('High Score: ' + 0);
 }
