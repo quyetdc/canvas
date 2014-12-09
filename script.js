@@ -139,7 +139,7 @@ $(document).ready(function () {
     });
 });
 
-function resetScore() {
+function resetScore(){
     localStorage.setItem('highScore', 0);
-    $('#high_score').html('High Score: ' + 0);
+    $("#high_score").html('High Score: ' + 0);
 }
