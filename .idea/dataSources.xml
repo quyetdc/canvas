@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1229982684">
+    <data-source source="LOCAL" name="Rails every-space: development" uuid="bbabe8b0-3a63-4096-9942-ee88d00f2111">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/everyspace_development</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfce</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails every-space: test" uuid="8b09ccd4-987a-442f-9c77-6ddb410302d1">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/everyspace_test</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfce</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails every-space: production" uuid="bbc0c364-6516-41e3-a623-8ad7d4282708">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/everyspace_production</jdbc-url>
+      <user-name>everyspace</user-name>
+      <user-password>dfcfdfdcdfcfdfd8dfd3dfd9dfdadfcbdfc9dfcfdf9bdf98df99</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails formtastic: development" uuid="c88ff77e-4594-48cd-b702-3ced251d9310">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/formtastic_development</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfce</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails formtastic: test" uuid="6e6c0a03-33a0-4c79-a157-86a865acb965">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/formtastic_test</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfce</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails formtastic: production" uuid="c83f37d9-8df0-40a5-b50c-9e9b2c2b57d0">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:formtastic_production</jdbc-url>
+      <user-name>formtastic</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfecdfe5dff8dfe7dffedfebdff9dffedfe3dfe9dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails game_qa: development" uuid="992a02ad-2e18-48f6-b1f9-bae764f756f6">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/game_matome</jdbc-url>
+      <user-name>root</user-name>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails game_qa: test" uuid="eefa723e-29ff-4937-9c5a-72775e9a66ee">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$USER_HOME$/evo-projects/game_qa/db/test.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails game_qa: staging" uuid="ea59d917-165f-416a-ae64-2edc6d85f83e">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://staging.cebh7mhuy6bu.ap-northeast-1.rds.amazonaws.com/game_matome</jdbc-url>
+      <user-name>mobaq</user-name>
+      <user-password>dfe0dfc4dfc7dfe7dfefdfeddfe1dfe9dfc0dfcbdfecdfdadf93dfeddfd9dff0df98dfc4dfc0dfdd</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails game_qa: production" uuid="12d11cb5-0c0a-4b73-8260-65dd8a64b63e">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/game_matome</jdbc-url>
+      <user-name>root</user-name>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails google_calendar_aggregator: development" uuid="63e4628a-bf55-4bcd-ae84-4fac8d57cc17">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$USER_HOME$/evo-projects/google_calendar_aggregator/db/development.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails google_calendar_aggregator: test" uuid="85647d32-e38d-4aaf-9b00-6713991bc7e2">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$USER_HOME$/evo-projects/google_calendar_aggregator/db/test.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails google_calendar_aggregator: production" uuid="ba7af84d-00fa-4019-a8b1-22a08bbeedd3">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://gcal-aggregator.cb2zu2jxnlgg.ap-northeast-1.rds.amazonaws.com/google_calendar_aggregator</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>dfc9dfc1df9adfeddfe6dfdfdfccdf9c</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails rails-angularjs: development" uuid="c87ccda7-8e18-444b-a79d-f93212c34c67">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/rails_angular_database_development</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfce</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails rails-angularjs: test" uuid="844233dd-dfe7-48ac-bade-030cb776b0db">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/rails_angular_database_test</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfce</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails rails-angularjs: production" uuid="508cbbda-c67a-4cfd-8fb1-5b92dd267ed2">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/rails_angular_database_production</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

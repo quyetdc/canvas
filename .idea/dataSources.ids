@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails every-space: development" uuid="bbabe8b0-3a63-4096-9942-ee88d00f2111">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails every-space: test" uuid="8b09ccd4-987a-442f-9c77-6ddb410302d1">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails every-space: production" uuid="bbc0c364-6516-41e3-a623-8ad7d4282708">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails formtastic: development" uuid="c88ff77e-4594-48cd-b702-3ced251d9310">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails formtastic: test" uuid="6e6c0a03-33a0-4c79-a157-86a865acb965">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails formtastic: production" uuid="c83f37d9-8df0-40a5-b50c-9e9b2c2b57d0">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails game_qa: development" uuid="992a02ad-2e18-48f6-b1f9-bae764f756f6">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails game_qa: test" uuid="eefa723e-29ff-4937-9c5a-72775e9a66ee">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails game_qa: staging" uuid="ea59d917-165f-416a-ae64-2edc6d85f83e">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails game_qa: production" uuid="12d11cb5-0c0a-4b73-8260-65dd8a64b63e">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails google_calendar_aggregator: development" uuid="63e4628a-bf55-4bcd-ae84-4fac8d57cc17">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails google_calendar_aggregator: test" uuid="85647d32-e38d-4aaf-9b00-6713991bc7e2">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails google_calendar_aggregator: production" uuid="ba7af84d-00fa-4019-a8b1-22a08bbeedd3">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails rails-angularjs: development" uuid="c87ccda7-8e18-444b-a79d-f93212c34c67">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails rails-angularjs: test" uuid="844233dd-dfe7-48ac-bade-030cb776b0db">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails rails-angularjs: production" uuid="508cbbda-c67a-4cfd-8fb1-5b92dd267ed2">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>

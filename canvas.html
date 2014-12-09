@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> HTML5 Canvas </title>
+
+    <!-- CUSTOM CSS -->
+    <style>
+        canvas {
+            border: 1px solid #005580;
+            background-color: lightgray;
+        }
+    </style>
+
+    <!-- CUSTOM JS -->
+    <script>
+        var c;
+        var ctx;
+
+        function init() {
+            c = document.getElementById("myCanvas");
+            ctx = c.getContext('2d');
+            draw();
+        }
+
+        function draw() {
+//            Draw RED square
+            ctx.fillStyle="#ff0000";
+            ctx.fillRect(30, 30, 50, 50); // 30 from left, 30 from top , 50 width , 50 height
+            ctx.strokeStyle="#000000";
+            ctx.lineWidth=3;
+            ctx.strokeRect(30, 30, 50, 50);
+
+//            Draw BLACK square
+            ctx.fillStyle="#000000";
+            ctx.fillRect(40, 40, 50, 50); // 30 from left, 30 from top , 50 width , 50 height
+            ctx.strokeStyle="#000000";
+            ctx.lineWidth=3;
+            ctx.strokeRect(30, 30, 50, 50);
+
+//            DRAW Text
+            ctx.font = "30pt Arial";
+//            Create gradient
+            var gradient = ctx.createLinearGradient(0, 0, c.width, 0) //x, y- start point , x, y- end point
+            gradient.addColorStop("0", "red");
+            gradient.addColorStop("1", "black");
+
+            ctx.fillStyle=gradient;
+            ctx.fillText("My Company", 100, 80);
+
+            // define line
+            ctx.strokeStyle="#000000";
+            ctx.fillStyle="#ff0000";
+            ctx.lineWidth=2;
+
+            ctx.beginPath();
+            ctx.moveTo(90, 90);
+            ctx.lineTo(350, 90);
+            ctx.stroke();
+            ctx.closePath();
+        }
+    </script>
+</head>
+
+<!-- initialize canvas on load  -->
+<body onload="init()">
+    <canvas id="myCanvas" width="400" height="150">
+        <p>Some browser does not have canvas feature</p>
+    </canvas>
+</body>
+</html>

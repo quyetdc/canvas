@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../appresearch/.idea/appresearch.iml" filepath="$PROJECT_DIR$/../appresearch/.idea/appresearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../every-space/.idea/every-space.iml" filepath="$PROJECT_DIR$/../every-space/.idea/every-space.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../formtastic/.idea/formtastic.iml" filepath="$PROJECT_DIR$/../formtastic/.idea/formtastic.iml" />
+      <module fileurl="file://$USER_HOME$/evo-projects/game_qa/.idea/game_qa.iml" filepath="$USER_HOME$/evo-projects/game_qa/.idea/game_qa.iml" />
+      <module fileurl="file://$USER_HOME$/evo-projects/google_calendar_aggregator/.idea/google_calendar_aggregator.iml" filepath="$USER_HOME$/evo-projects/google_calendar_aggregator/.idea/google_calendar_aggregator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../rails-angularjs/.idea/rails-angularjs.iml" filepath="$PROJECT_DIR$/../rails-angularjs/.idea/rails-angularjs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/snake_html5.iml" filepath="$PROJECT_DIR$/.idea/snake_html5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../udemy/.idea/udemy.iml" filepath="$PROJECT_DIR$/../udemy/.idea/udemy.iml" />
+    </modules>
+  </component>
+</project>
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="" />
+    <mapping directory="$USER_HOME$/evo-projects/game_qa" vcs="Git" />
+    <mapping directory="$USER_HOME$/evo-projects/google_calendar_aggregator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../appresearch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../every-space" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../formtastic" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../rails-angularjs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../udemy" vcs="Git" />
+  </component>
+</project>
+
