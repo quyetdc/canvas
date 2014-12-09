@@ -7,7 +7,7 @@ $(document).ready(function () {
     var cw = 15; // cell width
     var food; // food, small square
     var score; // current score
-    var speed = 70; //milliseconds
+    var speed = 60; //milliseconds
     var cellColor = "green";
     var d; // direction
 
